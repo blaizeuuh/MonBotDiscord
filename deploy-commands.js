@@ -32,12 +32,3 @@ const rest = new REST({ version: '10' }).setToken(process.env.TOKEN);
     console.error('❌ Erreur lors du déploiement :', error);
   }
 })();
-
-module.exports = {
-  data: new SlashCommandBuilder()
-    .setName('nom')
-    .setDescription('Description'),
-  async execute(interaction) {
-    await interaction.reply('Commande de test exécutée avec succès !');
-  }
-};
