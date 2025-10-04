@@ -1,96 +1,77 @@
+# MonBotDiscord
 
-# 🤖 Webify Helper BOT
-
-**Webify** est un bot Discord multifonction pour la gestion communautaire, les tickets, l'accueil automatique, l'attribution de rôles et la modération.
-
-> 👑 Développé pour manager un seul et unique serveur
+MonBotDiscord est un bot Discord moderne et flexible, conçu pour automatiser et enrichir votre serveur avec des fonctionnalités variées : modération, jeux, utilitaires, réactions automatiques, commandes personnalisées et bien plus encore.
 
 ---
 
-## ✨ Fonctionnalités
+## 🚀 Fonctionnalités principales
 
-- 🎟️ Système de ticket privé avec bouton
-- 👋 Message de bienvenue avec image personnalisée
-- 🧾 Auto-rôle à l'arrivée d'un nouveau membre
-- 🛠️ Commandes de modération : `/purge`, `/close`...
-- 🔐 Système de vérification par bouton pour accéder au serveur
-- 📩 Commandes slash modernes (`/`)
+- **Modération automatisée** : gestion des messages, sanctions, logs.
+- **Jeux & fun** : mini-jeux, quiz, commandes amusantes.
+- **Utilitaires** : sondages, rappels, gestion des rôles, infos serveur.
+- **Réactivité** : réponses automatiques, réactions personnalisées.
+- **Extensible** : ajoutez facilement de nouvelles commandes ou modules.
 
 ---
 
-## 🚀 Installation locale
+## 🛠️ Installation & Lancement
 
-1. Clone ce dépôt :
+### Prérequis
+
+- Node.js (version 16 ou + recommandée)
+- Un token de bot Discord ([Créer une application Discord](https://discord.com/developers/applications))
+
+### Étapes
+
+1. **Cloner le dépôt :**
    ```bash
-   git clone https://github.com/ton-user/ton-repo.git
-   cd ton-repo
+   git clone https://github.com/blaizeuuh/MonBotDiscord.git
+   cd MonBotDiscord
    ```
 
-2. Installe les dépendances :
+2. **Installer les dépendances :**
    ```bash
    npm install
    ```
 
-3. Crée un fichier `.env` :
-   ```
-   TOKEN=ton_token_discord
-   CLIENT_ID=ton_id_application
-   ```
+3. **Configurer le bot :**
+   - Renommez `.env.example` en `.env`
+   - Renseignez votre token Discord et autres variables nécessaires dans le fichier `.env`
 
-4. Déploie les commandes slash :
-   ```bash
-   node deploy-commands.js
-   ```
-
-5. Lance le bot :
+4. **Lancer le bot :**
    ```bash
    npm start
    ```
 
 ---
 
-## 🌐 Hébergement en ligne
-
-Ce bot est compatible avec [Railway.app](https://railway.app) :
-
-- Connecte ton dépôt GitHub
-- Configure les variables `TOKEN` et `CLIENT_ID`
-- Le bot démarre automatiquement avec `node index.js`
-
----
-
-## 📁 Structure du projet
+## 📁 Architecture des dossiers
 
 ```
-.
-├── commands/          # Commandes slash (ex: purge, close)
-├── events/            # Gestion des événements Discord (ex: ready, interactionCreate)
-├── index.js           # Fichier principal du bot
-├── deploy-commands.js # Déploiement des commandes /
-├── .env               # Variables d’environnement (non poussé sur GitHub)
-├── package.json       # Dépendances & script de lancement
-└── README.md          # Description du projet
+MonBotDiscord/
+├── src/                 # Code source principal du bot
+│   ├── commands/        # Commandes disponibles pour les utilisateurs
+│   ├── events/          # Gestionnaires d'événements Discord
+│   ├── utils/           # Fonctions utilitaires/modulaires
+│   └── index.js         # Point d'entrée principal
+├── config/              # Fichiers de configuration
+├── .env.example         # Exemple de configuration des variables d'environnement
+├── package.json         # Dépendances et scripts NPM
+└── README.md            # Ce fichier
 ```
 
 ---
 
-## 🛡️ Permissions requises pour le bot
+## ✨ Contribution
 
-Assure-toi que ton bot a ces permissions :
-- Gérer les rôles
-- Gérer les salons
-- Lire les messages / Envoyer des messages
-- Ajouter des réactions
-- Utiliser les Slash Commands
+Les contributions sont les bienvenues ! N’hésitez pas à proposer des améliorations, corriger des bugs ou ajouter des fonctionnalités.
 
 ---
 
-## 📬 Contact
+## 📄 Licence
 
-Pour toute suggestion ou aide, n’hésite pas à contacter le développeur **kvdpf** sur Discord 👑
+Ce projet est sous licence MIT.
 
 ---
 
-## 📜 Licence
-
-Ce projet est open-source. Utilisation libre à des fins non commerciales.
+**Contact** : [blaizeuuh](https://github.com/blaizeuuh)
