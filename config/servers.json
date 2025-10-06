@@ -1,0 +1,20 @@
+{
+  "1383803085159268433": {
+    "channels": {
+      "welcome": "1383803222543564930",
+      "logs": "1383803402445783161",
+      "tickets": "1383804218975977562",
+      "ticketCategory": null
+    },
+    "roles": {
+      "admin": null,
+      "autoRole": null,
+      "staff": null
+    },
+    "settings": {
+      "autoRole": true,
+      "welcomeMessage": true,
+      "ticketSystem": true
+    }
+  }
+}
